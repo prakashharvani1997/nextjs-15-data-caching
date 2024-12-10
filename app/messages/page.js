@@ -3,7 +3,7 @@ import { unstable_noStore } from 'next/cache';
 
 // export const revalidate = 5;
 
-// export const dynamic = 'force-dynamic' // is equal to cache : 'no-store'
+export const dynamic = 'force-dynamic' // is equal to cache : 'no-store'
 
 export default async function MessagesPage() {
   // unstable_noStore()  // Same as dynamic / cache : no-store
