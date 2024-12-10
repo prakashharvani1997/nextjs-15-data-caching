@@ -9,6 +9,9 @@ export default async function MessagesPage() {
   // unstable_noStore()  // Same as dynamic / cache : no-store
   const response = await fetch('http://localhost:8080/messages', {
 
+    next:{
+      tags :['msg']
+    }
     // next:{
     //   revalidate : 5
     // }
